@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG AITR Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="gdg-header-bar">
+            <div class="gdg-blue-bar"></div>
+            <div class="gdg-red-bar"></div>
+            <div class="gdg-yellow-bar"></div>
+            <div class="gdg-green-bar"></div>
+        </div>
+        <div class="header">
+            <div class="header-title">
+                <img src="public/gdglogo.png" alt="GDG Logo" class="admin-logo">
+                <h1>GDG AITR Admin Panel</h1>
+            </div>
+            <div class="header-links">
+                <a href="index.html" class="home-link">Home</a>
+                <button onclick="logout()" class="logout-btn hidden" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+        <div id="loginSection" class="login-section">
+            <div class="login-form">
+                <h2>🔐 Admin Login</h2>
+                <input type="text" id="adminUID" placeholder="Admin UID">
+                <input type="password" id="adminPassword" placeholder="Password">
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+
+        <div id="adminPanel" class="admin-panel hidden">
+            <div class="section">
+                <h2>📅 Event Details</h2>
+                <div class="event-form">
+                    <div class="form-row">
+                        <input type="text" id="eventTitle" placeholder="Event Title" value="GDG AITR Tech Event">
+                        <input type="date" id="eventDate" value="2024-12-15">
+                    </div>
+                    <div class="form-row">
+                        <input type="time" id="eventTime" value="10:00">
+                        <input type="text" id="eventLocation" placeholder="Location" value="AITR Campus">
+                    </div>
+                    <textarea id="eventDescription" placeholder="Event Description">Join us for an amazing tech event with workshops, talks, and networking!</textarea>
+                    <button onclick="updateEvent()">💾 Update Event</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>👥 Registrations</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3 id="totalCount">0</h3>
+                        <p>Total Registrations</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="todayCount">0</h3>
+                        <p>Today's Registrations</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button onclick="downloadExcel()" class="download-btn">📊 Download Excel</button>
+                    <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
+                    <button onclick="clearDatabase()" class="clear-btn">🗑️ Clear All</button>
+                </div>
+                <div class="registrations-list" id="registrationsList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="admin-script.js"></script>
+</body>
+</html>

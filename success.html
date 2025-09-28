@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Registration Successful - GDG AITR</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark sticky top-0 z-10">
+            <div class="gdg-header-bar">
+                <div class="gdg-blue-bar"></div>
+                <div class="gdg-red-bar"></div>
+                <div class="gdg-yellow-bar"></div>
+                <div class="gdg-green-bar"></div>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center gap-3">
+                        <img src="public/gdglogo.png" alt="GDG Logo" class="h-8 w-auto">
+                        <h1 class="text-xl font-medium text-foreground-light dark:text-foreground-dark">GDG AITR</h1>
+                    </div>
+                    <a href="admin.html" class="text-sm text-placeholder-light dark:text-placeholder-dark hover:text-gdg-blue transition-colors">Admin</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div class="w-full max-w-md space-y-8 bg-background-light dark:bg-background-dark p-8 rounded-lg border border-border-light dark:border-border-dark text-center">
+                <div class="text-gdg-green text-6xl mb-4">✓</div>
+                <h2 class="text-3xl font-bold text-foreground-light dark:text-foreground-dark">
+                    Registration Successful!
+                </h2>
+                <p class="text-foreground-light dark:text-foreground-dark mb-4">
+                    Thank you for registering. We will contact you soon with event details.
+                </p>
+                <div class="bg-input-light dark:bg-input-dark p-4 rounded-lg border-l-4 border-gdg-blue">
+                    <p class="text-sm italic text-foreground-light dark:text-foreground-dark">
+                        "The future belongs to those who learn more skills and combine them in creative ways."
+                    </p>
+                    <p class="text-xs text-placeholder-light dark:text-placeholder-dark mt-2">- Robert Greene</p>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-sm text-foreground-light dark:text-foreground-dark">Follow us for updates:</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.instagram.com/gdgoc.aitr?utm_source=ig_web_button_share_sheet&igsh=MXZ4d2J4OXllYmlyNA==" target="_blank" class="text-gdg-blue hover:text-opacity-80 transition-colors">Instagram</a>
+                        <a href="https://twitter.com/GDSCAITR" target="_blank" class="text-gdg-blue hover:text-opacity-80 transition-colors">Twitter</a>
+                        <a href="https://www.linkedin.com/company/gdscaitr/" target="_blank" class="text-gdg-blue hover:text-opacity-80 transition-colors">LinkedIn</a>
+                    </div>
+                </div>
+                <a href="index.html" class="inline-block bg-gdg-blue text-white font-bold py-2 px-4 rounded hover:bg-opacity-90 transition-colors">
+                    Register Another
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/tailwind-config.js"></script>
+</body>
+</html>
