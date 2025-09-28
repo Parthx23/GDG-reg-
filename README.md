@@ -32,8 +32,8 @@ A modern, responsive website for Google Developer Groups at Acropolis Institute 
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Tailwind CSS
+- JavaScript 
+- CSS
 - Firebase Realtime Database
 - Google Fonts (Roboto)
 
